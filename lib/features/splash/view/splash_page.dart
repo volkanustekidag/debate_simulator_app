@@ -1,3 +1,5 @@
+import 'package:dart_openai/dart_openai.dart';
+import 'package:debate_simulator_app/features/home/presentation/view/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -12,7 +14,10 @@ class _SplashPageState extends State<SplashPage> {
   @override
   void initState() {
     // TODO: implement initState
-    Future.delayed(const Duration(seconds: 2), () {});
+    OpenAI.apiKey = "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";
+    Future.delayed(const Duration(seconds: 2), () {
+      Get.offAll(const HomePage());
+    });
     super.initState();
   }
 
