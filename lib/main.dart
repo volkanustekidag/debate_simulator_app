@@ -1,4 +1,4 @@
-import 'package:debate_simulator_app/features/view/splash_page.dart';
+import 'package:debate_simulator_app/features/splash/view/splash_page.dart';
 import 'package:flutter/material.dart';
 import 'package:get/route_manager.dart';
 
